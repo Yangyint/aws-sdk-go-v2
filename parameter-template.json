@@ -1,13 +1,15 @@
 {
-	"mock1": {
-		"description": "test mock 1 with optional as null"
+	"input": {
+		"description": "S3 URI to samplesheet.csv. Rows therein point to S3 URIs for fastq data"
 	},
-	"mock2": {
-		"description": "test mock 2 with optional as true",
-		 "optional": true
+	"fasta": {
+		"description": "S3 URI of reference FASTA file"
 	},
-	"mock3": {
-		"description": "test mock 3 with optional as false",
-		 "optional": false
-	}
+	"ecr_registry": {
+		"description": "Amazon ECR registry for container images (e.g. '<account-id>.dkr.ecr.<region>.amazonaws.com')"
+	},
+    "aws_region": {
+        "description": "AWS region used for execution",
+        "optional": true
+    }
 }
